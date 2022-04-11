@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+
+    <!-- Implement scrolling text
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+     -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/COST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="48dp"
+            android:layout_toRightOf="@+id/superAttackDesc"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="00"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/HP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:fontFamily="monospace"
+                android:text="0000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="0000" />
+
+            <TextView
+                android:id="@+id/ATT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="73dp"
+                android:layout_toRightOf="@+id/HP"
+                android:fontFamily="monospace"
+                android:text="0000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="0000" />
+
+            <TextView
+                android:id="@+id/DEF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="42dp"
+                android:fontFamily="monospace"
+                android:text="0000"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="0000" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leaderSkillDesc"
+            android:layout_width="250dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/COST"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.626" />
+
+        <TextView
+            android:id="@+id/superAttackTitle"
+            android:layout_width="245dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/leaderSkillDesc"
+            android:layout_below="@+id/leaderSkillDesc"
+            android:layout_marginTop="23dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/superAttackDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/superAttackDesc"
+            android:layout_width="255dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/superAttackTitle"
+            android:layout_below="@+id/superAttackTitle"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/passiveSkillTitle"
+            android:layout_width="255dp"
+            android:layout_height="17dp"
+            android:layout_alignLeft="@+id/superAttackDesc"
+            android:layout_below="@+id/superAttackDesc"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="monospace"
+            android:gravity="start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="7dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@android:color/holo_blue_light"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+        <TextView
+            android:id="@+id/passiveSkillDesc"
+            android:layout_width="250dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/passiveSkillTitle"
+            android:layout_below="@+id/passiveSkillTitle"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="monospace"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="602dp" />
+
+        <Button
+            android:id="@+id/arrowButton"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/leaderSkillDesc"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="75dp"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.etl.rum.rumtestapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.emedstore.in"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDWfXgUvV-opMrxCX_-so8jQ6Zcegso-g4" />
+
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".tabActivities.TabSimple" />
+        <activity android:name=".tabActivities.TabScrollable" />
+        <activity android:name=".tabActivities.IconTextTabsActivity" />
+        <activity android:name=".paytmTest.TestPaytmActivity" />
+        <activity android:name=".calenderViewTest.CalenderViewTest" />
+        <activity android:name=".fcmSMSTest.FCMsmsTest" />
+        <activity android:name=".directPay.DirecPayTestActivity" />
+        <activity android:name=".callbackWebViewTest.WebViewCallBackTestActivity" />
+        <activity android:name=".dateTimeConversation.DateTimeConverzationTestActivity" />
+        <activity android:name=".fireStoreTest.FireStoreTestActivity" />
+        <activity android:name=".webViewWIthPostDataTest.WebViewWithPostActivity" />
+        <activity android:name=".FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity" />
+
+        <!-- start facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".stripeTest.StripeTestActivity" />
+        <activity android:name=".notificatoinHeadsUp.NotificationHeadsUpActivity" />
+        <activity android:name=".testAll.TestAllActivity" />
+        <!-- end facebook -->
+        <activity android:name=".LocalizationTest.LocalizationTest" />
+        <activity android:name=".dialogFloatingActivity.DialogFloatingActivity" />
+        <activity
+            android:name=".dialogFloatingActivity.DialogFloatingActivity2"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".broadcastAndDialog.BroadCastFromMultipleActivitiesTest" />
+        <activity android:name=".broadcastAndDialog.ChildActivity_1" />
+        <activity android:name=".broadcastAndDialog.ParentActivity" />
+        <activity android:name=".broadcastAndDialog.ChildActivity_2" />
+        <activity android:name=".timeZoneTest.TimeZoneTestActvity" />
+        <activity android:name=".locationAndPermissionTestActivity.LocationAndPermissionTestActivity" />
+        <activity android:name=".locationAndPermissionTestActivity.LocationTest2" />
+        <activity android:name=".reCaptchaTest.ReCaptchaTestActivity" />
+        <activity android:name=".GeoCodeActivity" />
+        <activity android:name=".PlaceApi.TestPlaceAPIActivity" />
+        <activity android:name=".mockLocation.MockLocationCheckActivity" />
+        <activity android:name=".rotateWithScrollTest.RotateWithScrollTestActivity" />
+        <activity android:name=".rotateWithScrollTest2.RotateWithScrollTestActivity2" />
+        <activity android:name=".googleSheetAccess.GoogleSheetAccessActivity" />
+        <activity android:name=".steggeredTest.SteggeredLayoutActivity" />
+        <activity android:name=".RecyclerViewWithHeader.RecyclerViewWithHeaderActivity" />
+        <activity android:name=".NofificationVibration.NofificationVibrationActivity" />
+        <activity android:name=".LocationUpdate.LocationUpdateActivity" />
+        <activity android:name=".testAll.TestAllActivity2" />
+        <activity android:name=".workManager.WorkManagerActivity" />
+        <activity android:name=".speech_to_text.SpeechToTextActivity" />
+        <activity android:name=".cNetPay.CNEtPayActivity" />
+        <activity android:name=".downloadWithProgress.DownloadWithNotificationProgress" />
+        <activity android:name=".qrCodeRead.QRCodeReadActivity" />
+        <activity android:name=".signInWithGoogle.SignInWithGoogleActivity" />
+        <activity android:name=".barcode_read.BarcodeScanTestActivity" />
+        <activity android:name=".ePrescriptionTest.EPrescriptionTestActivity" />
+    </application>
+</manifest>

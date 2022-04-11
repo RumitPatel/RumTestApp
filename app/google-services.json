@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "990673317526",
+    "firebase_url": "https://rumtestappp.firebaseio.com",
+    "project_id": "rumtestappp",
+    "storage_bucket": "rumtestappp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990673317526:android:7ed85e293aa8fb0e",
+        "android_client_info": {
+          "package_name": "com.etl.rum.rumtestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990673317526-v6cjkmj7l6lld0q9u8raer65fq6kpi63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWsFqLgkydq37wCzAJvwRoVF2Uz4jFBTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
