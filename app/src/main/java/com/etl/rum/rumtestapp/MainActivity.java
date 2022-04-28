@@ -34,6 +34,7 @@ import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActiv
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
 import com.etl.rum.rumtestapp.directPay.DirecPayTestActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
+import com.etl.rum.rumtestapp.drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity;
 import com.etl.rum.rumtestapp.ePrescriptionTest.EPrescriptionTestActivity;
 import com.etl.rum.rumtestapp.fcmSMSTest.FCMsmsTest;
 import com.etl.rum.rumtestapp.fireStoreTest.FireStoreTestActivity;
@@ -433,6 +434,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 49:
                     startActivity(new Intent(mContext, EPrescriptionTestActivity.class));
+                    break;
+                case 50:
+                    startActivity(new Intent(mContext, DrawRoundOnFingerTouchActivity.class));
                     break;
                 default:
                     break;

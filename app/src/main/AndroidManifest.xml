@@ -115,7 +115,7 @@
         <activity android:name=".downloadWithProgress.DownloadWithNotificationProgress" />
         <activity android:name=".qrCodeRead.QRCodeReadActivity" />
         <activity android:name=".signInWithGoogle.SignInWithGoogleActivity" />
-        <activity android:name=".barcode_read.BarcodeScanTestActivity" />
         <activity android:name=".ePrescriptionTest.EPrescriptionTestActivity" />
+        <activity android:name=".drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity" />
     </application>
 </manifest>
