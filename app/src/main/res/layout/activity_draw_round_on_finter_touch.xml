@@ -22,7 +22,7 @@
             android:src="@drawable/human_body_demo" />
 
         <com.etl.rum.rumtestapp.drawRoundOnFingerTouch.SimpleDrawingView
-            android:id="@+id/simpleDrawingView1"
+            android:id="@+id/simpleDrawingView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
