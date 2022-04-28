@@ -236,6 +236,10 @@ public class TempData {
             myInfo.setName("EPrescription Test");
             myInfo.setAddress("");
             add(myInfo);
+            myInfo = new MyInfo();
+            myInfo.setName("Draw round on finger touch Test");
+            myInfo.setAddress("");
+            add(myInfo);
         }
     }
 
