@@ -20,6 +20,8 @@ public class SimpleDrawingView extends View {
     // Store circles to draw each time the user touches down
     private List<Point> circlePoints;
 
+    private OnImageTouchListener mOnImageTouchListener;
+
     public SimpleDrawingView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setupPaint(); // same as before
@@ -42,6 +44,7 @@ public class SimpleDrawingView extends View {
         circlePoints.add(new Point(Math.round(touchX), Math.round(touchY)));
         // indicate view should be redrawn
         postInvalidate();
+        mOnImageTouchListener.onImageTouch(touchX, touchY);
         return false;// continue touch event if finger is on touched on screen
     }
 
@@ -55,5 +58,9 @@ public class SimpleDrawingView extends View {
 //        drawPaint.setStyle(Paint.Style.STROKE);
         drawPaint.setStyle(Paint.Style.FILL);
         // ...
+    }
+
+    protected void setListener(OnImageTouchListener onImageTouchListener) {
+        mOnImageTouchListener = onImageTouchListener;
     }
 }
