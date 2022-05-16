@@ -76,19 +76,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new C03773();
     private RecyclerView recyclerView;
 
-    public static void get2FractionDecimal() {
-        Double doubleValue = Double.parseDouble("8643.254584151251");
-/*        DecimalFormat df = new DecimalFormat();
-        df.setMaximumFractionDigits(2);
-        String value =  df.format(doubleValue);
-        System.out.println("?? value = " + value);*/
-
-/*        DecimalFormat df1 = new DecimalFormat("#.##");
-        df1.setRoundingMode(RoundingMode.CEILING);
-//        Double d = n.doubleValue();
-        System.out.println("??" + df1.format(doubleValue));*/
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
