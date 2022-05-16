@@ -137,14 +137,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         navigationView.setNavigationItemSelectedListener(new C03761());
     }
 
-    private void testCrashlytics() {
-//        Crashlytics.getInstance().crash(); // Force a crash
-        TextView tv = null;
-        Object obj = null;
-        tv.setText(obj.toString());
-
-    }
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
