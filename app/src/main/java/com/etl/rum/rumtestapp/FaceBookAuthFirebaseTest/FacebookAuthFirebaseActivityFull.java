@@ -25,11 +25,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 
-/**
- * Created by FatehAli Asamadi on 1/31/2018.
- * FacebookAuthFirebaseActivity
- */
-
 public class FacebookAuthFirebaseActivityFull extends Activity {
 
     private static final String EMAIL = "email";

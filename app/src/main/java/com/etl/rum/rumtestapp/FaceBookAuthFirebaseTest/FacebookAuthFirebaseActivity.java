@@ -13,18 +13,12 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
-import java.util.Arrays;
-
-/**
- * Created by FatehAli Asamadi on 1/31/2018.
- * FacebookAuthFirebaseActivity
- */
+import java.util.Collections;
 
 public class FacebookAuthFirebaseActivity extends Activity {
 
     private static final String EMAIL = "email";
 
-    private LoginButton loginButton;
     private CallbackManager callbackManager;
 
     @Override
@@ -39,8 +33,8 @@ public class FacebookAuthFirebaseActivity extends Activity {
 
         callbackManager = CallbackManager.Factory.create();
 
-        loginButton = findViewById(R.id.login_button);
-        loginButton.setReadPermissions(Arrays.asList(EMAIL));
+        LoginButton loginButton = findViewById(R.id.login_button);
+        loginButton.setReadPermissions(Collections.singletonList(EMAIL));
         // If you are using in a fragment, call loginButton.setFragment(this);
 
         // Callback registration
