@@ -14,10 +14,10 @@ import java.util.List;
 public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_ITEM = 1;
-    private List<ListItem> mHeaderItems;
+    private final List<ListItem> mHeaderItems;
 
     MyRecyclerAdapter(List<ListItem> headerItems) {
-        this.mHeaderItems = headerItems;
+        mHeaderItems = headerItems;
     }
 
     @NonNull
@@ -38,11 +38,11 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         if (holder instanceof VHHeader) {
             // VHHeader VHheader = (VHHeader)holder;
-            Header currentItem = (Header) mHeaderItems.get(position);
+            Header currentItem = (Header) mHeaderItems.get(holder.getAdapterPosition());
             VHHeader VHheader = (VHHeader) holder;
             VHheader.txtTitle.setText(currentItem.getHeader());
         } else if (holder instanceof VHItem) {
-            ContentItem currentItem = (ContentItem) mHeaderItems.get(position);
+            ContentItem currentItem = (ContentItem) mHeaderItems.get(holder.getAdapterPosition());
             VHItem VHitem = (VHItem) holder;
             VHitem.txtName.setText(currentItem.getName());
         }
@@ -55,9 +55,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     }
 
     private boolean isPositionHeader(int position) {
-
-        return mHeaderItems.get(position) instanceof Header;
-
+        return false;
     }
 
     @Override

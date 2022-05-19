@@ -81,7 +81,7 @@ public class TestPlaceAPIActivity extends AppCompatActivity {
                 }
 
                 if (!place.getAddress().toString().trim().equalsIgnoreCase("")) {
-                    tvAddress.setText("lat:"+place.getLatLng().latitude+"\nlong:"+place.getLatLng().longitude+"\nAddress: " +place.getAddress().toString());
+                    tvAddress.setText("lat:" + place.getLatLng().latitude + "\nlong:" + place.getLatLng().longitude + "\nAddress: " + place.getAddress().toString());
 
                     AppUtils.showToast(mContext, place.getAddress().toString());
                 } else {
