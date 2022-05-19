@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setActionTextColor(getResources().getColor(android.R.color.holo_red_light))
                 .show();
 
-//        abcTest123();
 //        get2FractionDecimal();
     }
 
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onStart();
     }*/
 
-    private void abcTest123() {
+    private void getTimezoneInfo() {
         Toast.makeText(mContext, "timezone = " + TimeZone.getDefault(), Toast.LENGTH_LONG).show();
         TimeZone timeZone = TimeZone.getDefault();
         Log.e("m_tag", "timeZone.getDefault() = " + TimeZone.getDefault());
@@ -129,7 +128,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("m_tag", "timeZone.getDisplayName(Locale.getDefault() = " + timeZone.getDisplayName(Locale.getDefault()));
         Log.e("m_tag", "timeZone.getID() = " + timeZone.getID());
         Log.e("m_tag", "timeZone.getDisplayName(false, TimeZone.SHORT) = " + timeZone.getDisplayName(false, TimeZone.SHORT));
-
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
