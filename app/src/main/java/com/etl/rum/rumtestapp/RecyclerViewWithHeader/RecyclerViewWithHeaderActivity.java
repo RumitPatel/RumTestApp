@@ -9,12 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import com.etl.rum.rumtestapp.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewWithHeaderActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    List<List<ListItem>> arraylist;
     MyRecyclerAdapter adapter;
 
     @Override

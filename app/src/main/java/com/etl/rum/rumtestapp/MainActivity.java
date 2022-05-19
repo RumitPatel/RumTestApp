@@ -124,14 +124,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
-        navigationView.setNavigationItemSelectedListener(new C03761());
+        navigationView.setNavigationItemSelectedListener(new MyOnNavigationItemSelectedListener());
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.fab:
-//                Snackbar.make(view, "Open Rums activity..", 0).setAction("Open", new MOnClickListner()).show();
 //                testCrashlytics();
 //                openRoughtGoogleMaps();
 
@@ -231,17 +230,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i("m_tag", "Version Code: " + Build.VERSION.RELEASE);
     }
 
-    private class MOnClickListner implements View.OnClickListener {
-        MOnClickListner() {
-        }
-
-        public void onClick(View v) {
-//            startActivity(new Intent(mContext, Profile.class));
-        }
-    }
-
-    private class C03761 implements NavigationView.OnNavigationItemSelectedListener {
-        C03761() {
+    private class MyOnNavigationItemSelectedListener implements NavigationView.OnNavigationItemSelectedListener {
+        MyOnNavigationItemSelectedListener() {
         }
 
         public boolean onNavigationItemSelected(MenuItem menuItem) {
