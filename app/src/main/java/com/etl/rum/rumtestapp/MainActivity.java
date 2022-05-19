@@ -111,14 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setActionTextColor(getResources().getColor(android.R.color.holo_red_light))
                 .show();
 
-//        get2FractionDecimal();
     }
-
-/*    @Override
-    protected void onStart() {
-        Snackbar.make(mDrawerLayout, (CharSequence) "Open Rums activity..", 0).setAction((CharSequence) "Open", new MOnClickListner()).show();
-        super.onStart();
-    }*/
 
     private void getTimezoneInfo() {
         Toast.makeText(mContext, "timezone = " + TimeZone.getDefault(), Toast.LENGTH_LONG).show();
