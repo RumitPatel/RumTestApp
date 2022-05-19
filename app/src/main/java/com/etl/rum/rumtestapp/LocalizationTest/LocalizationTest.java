@@ -16,11 +16,6 @@ import com.etl.rum.rumtestapp.R;
 
 import java.util.Locale;
 
-/**
- * Created by FatehAli Asamadi on 20-Feb-18.
- * LocalizationTest
- */
-
 public class LocalizationTest extends AppCompatActivity {
 
     private FloatingActionButton fab;
@@ -76,7 +71,7 @@ public class LocalizationTest extends AppCompatActivity {
     private void testLocalization() {
         String language;
         Locale ll = Locale.getDefault();
-        if(ll.getLanguage().equalsIgnoreCase( "ar")){
+        if (ll.getLanguage().equalsIgnoreCase("ar")) {
             language = "en";
         } else {
             language = "ar";
