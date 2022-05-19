@@ -17,7 +17,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.etl.rum.rumtestapp.FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity;
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FloatingActionButton fab;
     private Context mContext;
     private DrawerLayout mDrawerLayout;
-    private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new C03773();
+    private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
     private RecyclerView recyclerView;
 
     @Override
@@ -86,12 +85,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         this.mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-        this.fab = findViewById(R.id.fab);
-        this.fab.setOnClickListener(this);
-        this.recyclerView = findViewById(R.id.recyclerView);
-        this.recyclerView.setHasFixedSize(true);
-        this.recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
-        this.recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), this.mOnItemClickMyListener));
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(this);
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
+        recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
         ActionBar ab = getSupportActionBar();
 //        ab.setHomeAsUpIndicator((int) R.drawable.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
@@ -261,8 +260,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    class C03773 implements RecyclerViewAdapter.OnItemClickMyListener {
-        C03773() {
+    class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
+        OnItemClickMyListener() {
         }
 
         public void onItemClick(int position) {
