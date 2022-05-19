@@ -17,7 +17,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.etl.rum.rumtestapp.FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity;
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FloatingActionButton fab;
     private Context mContext;
     private DrawerLayout mDrawerLayout;
-    private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new C03773();
+    private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
     private RecyclerView recyclerView;
 
     @Override
@@ -86,12 +85,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         this.mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-        this.fab = findViewById(R.id.fab);
-        this.fab.setOnClickListener(this);
-        this.recyclerView = findViewById(R.id.recyclerView);
-        this.recyclerView.setHasFixedSize(true);
-        this.recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
-        this.recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), this.mOnItemClickMyListener));
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(this);
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
+        recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
         ActionBar ab = getSupportActionBar();
 //        ab.setHomeAsUpIndicator((int) R.drawable.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
@@ -112,17 +111,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setActionTextColor(getResources().getColor(android.R.color.holo_red_light))
                 .show();
 
-//        abcTest123();
-//        get2FractionDecimal();
     }
 
-/*    @Override
-    protected void onStart() {
-        Snackbar.make(mDrawerLayout, (CharSequence) "Open Rums activity..", 0).setAction((CharSequence) "Open", new MOnClickListner()).show();
-        super.onStart();
-    }*/
-
-    private void abcTest123() {
+    private void getTimezoneInfo() {
         Toast.makeText(mContext, "timezone = " + TimeZone.getDefault(), Toast.LENGTH_LONG).show();
         TimeZone timeZone = TimeZone.getDefault();
         Log.e("m_tag", "timeZone.getDefault() = " + TimeZone.getDefault());
@@ -130,7 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("m_tag", "timeZone.getDisplayName(Locale.getDefault() = " + timeZone.getDisplayName(Locale.getDefault()));
         Log.e("m_tag", "timeZone.getID() = " + timeZone.getID());
         Log.e("m_tag", "timeZone.getDisplayName(false, TimeZone.SHORT) = " + timeZone.getDisplayName(false, TimeZone.SHORT));
-
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -261,8 +251,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    class C03773 implements RecyclerViewAdapter.OnItemClickMyListener {
-        C03773() {
+    class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
+        OnItemClickMyListener() {
         }
 
         public void onItemClick(int position) {
