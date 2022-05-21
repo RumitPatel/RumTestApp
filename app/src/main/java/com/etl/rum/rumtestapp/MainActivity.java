@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FloatingActionButton fab;
     private Context mContext;
     private DrawerLayout mDrawerLayout;
-    private RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
+    private final RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
     private RecyclerView recyclerView;
 
     @Override
@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             jsonObjectMain.put("symptoms_array", jsonArraySymptoms);
 
-            Log.e("m_tag", "jsonObjectMain = \n" + jsonObjectMain.toString());
+            Log.e("m_tag", "jsonObjectMain = \n" + jsonObjectMain);
 
         } catch (JSONException e) {
             e.printStackTrace();
