@@ -18,7 +18,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.etl.rum.rumtestapp.FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity;
 import com.etl.rum.rumtestapp.LocalizationTest.LocalizationTest;
@@ -65,9 +64,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Locale;
-import java.util.TimeZone;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FloatingActionButton fab;
@@ -112,16 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setActionTextColor(getResources().getColor(android.R.color.holo_red_light))
                 .show();
 
-    }
-
-    private void getTimezoneInfo() {
-        Toast.makeText(mContext, "timezone = " + TimeZone.getDefault(), Toast.LENGTH_LONG).show();
-        TimeZone timeZone = TimeZone.getDefault();
-        Log.e("m_tag", "timeZone.getDefault() = " + TimeZone.getDefault());
-        Log.e("m_tag", "timeZone.getDisplayName() = " + timeZone.getDisplayName());
-        Log.e("m_tag", "timeZone.getDisplayName(Locale.getDefault() = " + timeZone.getDisplayName(Locale.getDefault()));
-        Log.e("m_tag", "timeZone.getID() = " + timeZone.getID());
-        Log.e("m_tag", "timeZone.getDisplayName(false, TimeZone.SHORT) = " + timeZone.getDisplayName(false, TimeZone.SHORT));
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
