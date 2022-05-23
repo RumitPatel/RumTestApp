@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -214,6 +215,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void showDeviceINfo() {
+        Log.i("m_tag", "Settings.Secure.ANDROID_ID: " + Settings.Secure.ANDROID_ID);
         Log.i("m_tag", "SERIAL: " + Build.SERIAL);
         Log.i("m_tag", "MODEL: " + Build.MODEL);
         Log.i("m_tag", "ID: " + Build.ID);
