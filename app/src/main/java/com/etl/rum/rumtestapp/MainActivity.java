@@ -66,11 +66,9 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private FloatingActionButton fab;
+    private final RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
     private Context mContext;
     private DrawerLayout mDrawerLayout;
-    private final RecyclerViewAdapter.OnItemClickMyListener mOnItemClickMyListener = new OnItemClickMyListener();
-    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,17 +78,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showDeviceINfo();
         testOuterMethod();
 
-        this.mContext = this;
+        mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-        fab = findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(this);
-        recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
         recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
         ActionBar ab = getSupportActionBar();
 //        ab.setHomeAsUpIndicator((int) R.drawable.ic_menu);
-        ab.setDisplayHomeAsUpEnabled(true);
+        if (ab != null) {
+            ab.setDisplayHomeAsUpEnabled(true);
+        }
         this.mDrawerLayout = findViewById(R.id.drawer_layout);
         final NavigationView navigationView = findViewById(R.id.nav_view);
         if (navigationView != null) {
@@ -116,14 +116,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fab:
-//                openRoughtGoogleMaps();
-
-                testJSONData();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.fab) {
+            openRoughtGoogleMaps();
+            testJSONData();
         }
     }
 
@@ -139,22 +134,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .appendQueryParameter("destination", "18.5204" + "," + "73.8567");
 
         startActivity(new Intent(Intent.ACTION_VIEW, directionsBuilder.build()));
-
-
-
-
-
-
-        /*String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?saddr=%f,%f(%s)&daddr=%f,%f (%s)", "22.2587", "71.1924", "Home Sweet Home", "18.5204", "73.8567", "Where the party is at");
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        intent.setPackage("com.google.android.apps.maps");
-        startActivity(intent);*/
-
-
-
-/*        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?saddr=20.344&daddr=20.5666"));
-        startActivity(intent);*/
     }
 
     private void testOuterMethod() {
@@ -164,7 +143,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int element : array1) {
             System.out.println("Element: " + element);
         }
-
     }
 
     private void testJSONData() {
@@ -210,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i("m_tag", "user: " + Build.USER);
         Log.i("m_tag", "BASE: " + Build.VERSION_CODES.BASE);
         Log.i("m_tag", "INCREMENTAL " + Build.VERSION.INCREMENTAL);
-        Log.i("m_tag", "SDK  " + Build.VERSION.SDK);
+        Log.i("m_tag", "SDK  " + Build.VERSION.SDK_INT);
         Log.i("m_tag", "BOARD: " + Build.BOARD);
         Log.i("m_tag", "HOST " + Build.HOST);
         Log.i("m_tag", "FINGERPRINT: " + Build.FINGERPRINT);
