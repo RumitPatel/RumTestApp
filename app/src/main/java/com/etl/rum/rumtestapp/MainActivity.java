@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i("m_tag", "user: " + Build.USER);
         Log.i("m_tag", "BASE: " + Build.VERSION_CODES.BASE);
         Log.i("m_tag", "INCREMENTAL " + Build.VERSION.INCREMENTAL);
-        Log.i("m_tag", "SDK  " + Build.VERSION.SDK);
+        Log.i("m_tag", "SDK  " + Build.VERSION.SDK_INT);
         Log.i("m_tag", "BOARD: " + Build.BOARD);
         Log.i("m_tag", "HOST " + Build.HOST);
         Log.i("m_tag", "FINGERPRINT: " + Build.FINGERPRINT);
