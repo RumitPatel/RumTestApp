@@ -114,14 +114,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fab:
-//                openRoughtGoogleMaps();
-
-                testJSONData();
-                break;
-            default:
-                break;
+        if (view.getId() == R.id.fab) {
+            //openRoughtGoogleMaps();
+            testJSONData();
         }
     }
 
@@ -138,17 +133,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         startActivity(new Intent(Intent.ACTION_VIEW, directionsBuilder.build()));
 
-
-
-
-
-
         /*String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?saddr=%f,%f(%s)&daddr=%f,%f (%s)", "22.2587", "71.1924", "Home Sweet Home", "18.5204", "73.8567", "Where the party is at");
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         intent.setPackage("com.google.android.apps.maps");
         startActivity(intent);*/
-
-
 
 /*        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                 Uri.parse("http://maps.google.com/maps?saddr=20.344&daddr=20.5666"));
