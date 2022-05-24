@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showDeviceINfo();
         testOuterMethod();
 
-        this.mContext = this;
+        mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(this);
