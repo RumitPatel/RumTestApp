@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
         ActionBar ab = getSupportActionBar();
 //        ab.setHomeAsUpIndicator((int) R.drawable.ic_menu);
-        ab.setDisplayHomeAsUpEnabled(true);
+        if (ab != null) {
+            ab.setDisplayHomeAsUpEnabled(true);
+        }
         this.mDrawerLayout = findViewById(R.id.drawer_layout);
         final NavigationView navigationView = findViewById(R.id.nav_view);
         if (navigationView != null) {
