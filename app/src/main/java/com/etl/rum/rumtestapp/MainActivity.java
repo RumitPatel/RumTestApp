@@ -132,15 +132,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .appendQueryParameter("destination", "18.5204" + "," + "73.8567");
 
         startActivity(new Intent(Intent.ACTION_VIEW, directionsBuilder.build()));
-
-        /*String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?saddr=%f,%f(%s)&daddr=%f,%f (%s)", "22.2587", "71.1924", "Home Sweet Home", "18.5204", "73.8567", "Where the party is at");
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        intent.setPackage("com.google.android.apps.maps");
-        startActivity(intent);*/
-
-/*        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                Uri.parse("http://maps.google.com/maps?saddr=20.344&daddr=20.5666"));
-        startActivity(intent);*/
     }
 
     private void testOuterMethod() {
@@ -150,7 +141,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int element : array1) {
             System.out.println("Element: " + element);
         }
-
     }
 
     private void testJSONData() {
