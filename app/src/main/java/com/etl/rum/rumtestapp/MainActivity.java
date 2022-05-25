@@ -341,7 +341,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, SpeechToTextActivity.class));
                     break;
                 case 44:
-                    startActivity(new Intent(mContext, CNEtPayActivity.class));
+//                    startActivity(new Intent(mContext, CNEtPayActivity.class));
                     break;
                 case 45:
                     startActivity(new Intent(mContext, DownloadWithNotificationProgress.class));
