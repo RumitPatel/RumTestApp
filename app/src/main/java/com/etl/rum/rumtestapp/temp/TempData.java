@@ -25,11 +25,11 @@ public class TempData {
     }
 
     public ArrayList<MyInfo> getTempStringArray2() {
-        return new C02332();
+        return new MyTempArray();
     }
 
-    static class C02332 extends ArrayList<MyInfo> {
-        C02332() {
+    static class MyTempArray extends ArrayList<MyInfo> {
+        MyTempArray() {
             for (int i = 0; i < 30; i++) {
                 MyInfo myInfo = new MyInfo();
                 myInfo.setName("name " + i);
