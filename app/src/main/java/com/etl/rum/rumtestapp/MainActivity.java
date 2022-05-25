@@ -220,16 +220,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 2:
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
                     break;
-                /*case 3:
-                    startActivity(new Intent(mContext, TabOnlyIcon.class));
+                case 3:
+//                    startActivity(new Intent(mContext, TabOnlyIcon.class));
                     return;
                 case 4:
-                    startActivity(new Intent(mContext, TabCustom.class));
+//                    startActivity(new Intent(mContext, TabCustom.class));
                     return;
                 case 5:
-                    startActivity(new Intent(mContext, TestNestedScroll.class));
+//                    startActivity(new Intent(mContext, TestNestedScroll.class));
                     return;
-                case 6:
+                /*case 6:
                     startActivity(new Intent(mContext, MyListActivity.class));
                     return;
                 case 7:
