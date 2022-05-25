@@ -26,7 +26,6 @@ import com.etl.rum.rumtestapp.PlaceApi.TestPlaceAPIActivity;
 import com.etl.rum.rumtestapp.RecyclerViewWithHeader.RecyclerViewWithHeaderActivity;
 import com.etl.rum.rumtestapp.adapters.RecyclerViewAdapter;
 import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivitiesTest;
-import com.etl.rum.rumtestapp.cNetPay.CNEtPayActivity;
 import com.etl.rum.rumtestapp.calenderViewTest.CalenderViewTest;
 import com.etl.rum.rumtestapp.callbackWebViewTest.WebViewCallBackTestActivity;
 import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActivity;
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.mContext));
-        recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
+        recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstance().getTempStringArray(), mOnItemClickMyListener));
         ActionBar ab = getSupportActionBar();
 //        ab.setHomeAsUpIndicator((int) R.drawable.ic_menu);
         if (ab != null) {
@@ -117,12 +116,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.fab) {
-            openRoughtGoogleMaps();
+            openRouteGoogleMaps();
             testJSONData();
         }
     }
 
-    private void openRoughtGoogleMaps() {
+    private void openRouteGoogleMaps() {
         Uri.Builder directionsBuilder = new Uri.Builder()
                 .scheme("https")
                 .authority("www.google.com")
@@ -221,36 +220,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 2:
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
                     break;
-                /*case 3:
-                    startActivity(new Intent(mContext, TabOnlyIcon.class));
+                case 3:
+//                    startActivity(new Intent(mContext, TabOnlyIcon.class));
                     return;
                 case 4:
-                    startActivity(new Intent(mContext, TabCustom.class));
+//                    startActivity(new Intent(mContext, TabCustom.class));
                     return;
                 case 5:
-                    startActivity(new Intent(mContext, TestNestedScroll.class));
+//                    startActivity(new Intent(mContext, TestNestedScroll.class));
                     return;
                 case 6:
-                    startActivity(new Intent(mContext, MyListActivity.class));
+//                    startActivity(new Intent(mContext, MyListActivity.class));
                     return;
                 case 7:
-                    startActivity(new Intent(mContext, MatrixTest.class));
+//                    startActivity(new Intent(mContext, MatrixTest.class));
                     return;
                 case 8:
-                    startActivity(new Intent(mContext, MatrixTest2.class));
+//                    startActivity(new Intent(mContext, MatrixTest2.class));
                     return;
                 case 9:
-                    startActivity(new Intent(mContext, TestThisUsage.class));
+//                    startActivity(new Intent(mContext, TestThisUsage.class));
                     return;
                 case 10:
-                    startActivity(new Intent(mContext, LogicTest.class));
+//                    startActivity(new Intent(mContext, LogicTest.class));
                     return;
                 case 11:
-                    startActivity(new Intent(mContext, TestActivities.class));
+//                    startActivity(new Intent(mContext, TestActivities.class));
                     return;
                 case 12:
-                    startActivity(new Intent(mContext, BroadCastReceiverTestActivity.class));
-                    return;*/
+//                    startActivity(new Intent(mContext, BroadCastReceiverTestActivity.class));
+                    return;
                 case 13:
                     startActivity(new Intent(mContext, TestPaytmActivity.class));
                     break;
@@ -342,7 +341,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, SpeechToTextActivity.class));
                     break;
                 case 44:
-                    startActivity(new Intent(mContext, CNEtPayActivity.class));
+//                    startActivity(new Intent(mContext, CNEtPayActivity.class));
                     break;
                 case 45:
                     startActivity(new Intent(mContext, DownloadWithNotificationProgress.class));

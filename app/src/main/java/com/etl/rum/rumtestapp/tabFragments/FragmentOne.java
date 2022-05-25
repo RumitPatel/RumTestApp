@@ -30,7 +30,7 @@ public class FragmentOne extends Fragment {
         this.recyclerView = view.findViewById(R.id.recyclerView);
         this.recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        this.recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstanse().getTempStringArray2(), this.mOnItemClickMyListener));
+        this.recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstance().getTempStringArray2(), this.mOnItemClickMyListener));
         this.swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
         this.swipeRefreshLayout.setOnRefreshListener(new mOnRefreshListener());
         return view;
@@ -76,7 +76,7 @@ public class FragmentOne extends Fragment {
         }
 
         public void onItemClick(int position) {
-            Toast.makeText(FragmentOne.this.getActivity(), TempData.getInstanse().getTempStringArray2().get(position).getName() + " selected", Toast.LENGTH_SHORT).show();
+            Toast.makeText(FragmentOne.this.getActivity(), TempData.getInstance().getTempStringArray2().get(position).getName() + " selected", Toast.LENGTH_SHORT).show();
         }
     }
 }

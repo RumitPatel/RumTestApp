@@ -111,7 +111,6 @@
         <activity android:name=".testAll.TestAllActivity2" />
         <activity android:name=".workManager.WorkManagerActivity" />
         <activity android:name=".speech_to_text.SpeechToTextActivity" />
-        <activity android:name=".cNetPay.CNEtPayActivity" />
         <activity android:name=".downloadWithProgress.DownloadWithNotificationProgress" />
         <activity android:name=".qrCodeRead.QRCodeReadActivity" />
         <activity android:name=".signInWithGoogle.SignInWithGoogleActivity" />
