@@ -198,7 +198,7 @@ public class TempData {
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
-            myInfo.setName("Steggered View");
+            myInfo.setName("Staggered View");
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
@@ -206,7 +206,7 @@ public class TempData {
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
-            myInfo.setName("Notificatoin with vibrate");
+            myInfo.setName("Notification with vibrate");
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
