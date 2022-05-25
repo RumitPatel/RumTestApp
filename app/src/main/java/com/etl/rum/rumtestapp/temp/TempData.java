@@ -78,7 +78,7 @@ public class TempData {
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
-            myInfo.setName("Test Usage of this keywork");
+            myInfo.setName("Test Usage of this keyword");
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
@@ -138,7 +138,7 @@ public class TempData {
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
-            myInfo.setName("Notification Headsup test");
+            myInfo.setName("Notification HeadsUp test");
             myInfo.setAddress("");
             add(myInfo);
             myInfo = new MyInfo();
