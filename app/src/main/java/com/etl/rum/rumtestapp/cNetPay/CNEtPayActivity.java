@@ -43,8 +43,7 @@ public class CNEtPayActivity extends AppCompatActivity {
                 String amount = mAmountView.getText().toString();
 
                 if (amount.isEmpty()) {
-                    Toast.makeText(CNEtPayActivity.this, "Veuillez entrer un montant SVP",
-                            Toast.LENGTH_LONG).show();
+
                 } else {
 //                    CinetPayUI cinetPayUI = CinetPayUI.getInstance(CNEtPayActivity.this, CINETPAY_MERCHANT);
                     CinetPayUI cinetPayUI = CinetPayUI.getInstance(CNEtPayActivity.this, CINETPAY_MERCHANT_WITH_URL_NOTIFICATION);
