@@ -116,12 +116,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.fab) {
-            openRoughtGoogleMaps();
+            openRouteGoogleMaps();
             testJSONData();
         }
     }
 
-    private void openRoughtGoogleMaps() {
+    private void openRouteGoogleMaps() {
         Uri.Builder directionsBuilder = new Uri.Builder()
                 .scheme("https")
                 .authority("www.google.com")
