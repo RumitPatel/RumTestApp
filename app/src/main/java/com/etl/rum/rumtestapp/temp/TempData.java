@@ -5,11 +5,9 @@ import com.etl.rum.rumtestapp.javaBean.MyInfo;
 import java.util.ArrayList;
 
 public class TempData {
-    public static final int TOTAL_COLLUMN_COUNT = 5;
-    public static final int TOTAL_ROW_COUNT = 3;
     private static TempData TEMP_DATA_OBJ = null;
 
-    public static final synchronized TempData getInstanse() {
+    public static synchronized TempData getInstanse() {
         TempData tempData;
         synchronized (TempData.class) {
             if (TEMP_DATA_OBJ != null) {
@@ -45,7 +43,7 @@ public class TempData {
         }
     }
 
-    class C02321 extends ArrayList<MyInfo> {
+    private class C02321 extends ArrayList<MyInfo> {
         C02321() {
             MyInfo myInfo = new MyInfo();
             myInfo.setName("simple tabs");
