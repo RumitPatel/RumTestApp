@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class TempData {
     private static TempData TEMP_DATA_OBJ = null;
 
-    public static synchronized TempData getInstanse() {
+    public static synchronized TempData getInstance() {
         TempData tempData;
         synchronized (TempData.class) {
             if (TEMP_DATA_OBJ != null) {

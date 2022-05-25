@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
@@ -35,7 +34,7 @@ public class SteggeredLayoutActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         setStaggeredGridLayoutManager(mContext,recyclerView, 2);
-        recyclerView.setAdapter(new RecyclerViewSteggeredAdapter(TempData.getInstanse().getTempStringArray(), mOnItemClickMyListener));
+        recyclerView.setAdapter(new RecyclerViewSteggeredAdapter(TempData.getInstance().getTempStringArray(), mOnItemClickMyListener));
     }
 
     public static void setStaggeredGridLayoutManager(Context context, RecyclerView recyclerView, int count) {
