@@ -39,7 +39,7 @@ public class TempData {
         }
     }
 
-    private class C02321 extends ArrayList<MyInfo> {
+    private static class C02321 extends ArrayList<MyInfo> {
         C02321() {
             MyInfo myInfo = new MyInfo();
             myInfo.setName("simple tabs");
