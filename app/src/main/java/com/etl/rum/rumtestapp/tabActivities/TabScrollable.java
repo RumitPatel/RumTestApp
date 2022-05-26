@@ -1,6 +1,5 @@
 package com.etl.rum.rumtestapp.tabActivities;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -17,7 +16,6 @@ import com.etl.rum.rumtestapp.tabFragments.FragmentThree;
 import com.etl.rum.rumtestapp.tabFragments.FragmentTwo;
 
 public class TabScrollable extends AppCompatActivity {
-    private Context mContext;
     private TabLayout tabLayout;
     private Toolbar toolbar;
     private ViewPager viewPager;
@@ -25,14 +23,13 @@ public class TabScrollable extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_scrollable);
-        this.mContext = this;
-        this.toolbar = findViewById(R.id.toolbar);
-        this.tabLayout = findViewById(R.id.tabs);
-        this.viewPager = findViewById(R.id.viewpager);
+        toolbar = findViewById(R.id.toolbar);
+        tabLayout = findViewById(R.id.tabs);
+        viewPager = findViewById(R.id.viewpager);
         setSupportActionBar(this.toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setViewPager(this.viewPager);
-        this.tabLayout.setupWithViewPager(this.viewPager);
+        tabLayout.setupWithViewPager(this.viewPager);
     }
 
     private void setViewPager(ViewPager viewPager) {
@@ -46,10 +43,8 @@ public class TabScrollable extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case 16908332:
-                onBackPressed();
-                break;
+        if (item.getItemId() == 16908332) {
+            onBackPressed();
         }
         return super.onOptionsItemSelected(item);
     }

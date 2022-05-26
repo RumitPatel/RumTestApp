@@ -19,20 +19,19 @@ import com.etl.rum.rumtestapp.adapters.RecyclerViewAdapter.OnItemClickMyListener
 import com.etl.rum.rumtestapp.temp.TempData;
 
 public class FragmentOne extends Fragment {
-    private OnItemClickMyListener mOnItemClickMyListener = new mOnItemClickMyListener();
-    private RecyclerView recyclerView;
+    private final OnItemClickMyListener mOnItemClickMyListener = new mOnItemClickMyListener();
     private SwipeRefreshLayout swipeRefreshLayout;
 
     @Nullable
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_one, container, false);
         Log.e(getActivity().getClass().getSimpleName(), "onCreateView FragmentOne");
-        this.recyclerView = view.findViewById(R.id.recyclerView);
-        this.recyclerView.setHasFixedSize(true);
-        this.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        this.recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstance().getTempStringArray2(), this.mOnItemClickMyListener));
-        this.swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
-        this.swipeRefreshLayout.setOnRefreshListener(new mOnRefreshListener());
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(new RecyclerViewAdapter(TempData.getInstance().getTempStringArray2(), this.mOnItemClickMyListener));
+        swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout.setOnRefreshListener(new mOnRefreshListener());
         return view;
     }
 
