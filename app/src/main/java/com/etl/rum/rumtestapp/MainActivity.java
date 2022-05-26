@@ -1,5 +1,6 @@
 package com.etl.rum.rumtestapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -176,6 +177,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @SuppressLint("HardwareIds")
     private void showDeviceINfo() {
         Log.i("m_tag", "Settings.Secure.ANDROID_ID: " + Settings.Secure.ANDROID_ID);
         Log.i("m_tag", "SERIAL: " + Build.SERIAL);
