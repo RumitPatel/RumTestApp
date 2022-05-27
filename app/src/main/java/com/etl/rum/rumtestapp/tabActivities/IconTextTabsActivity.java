@@ -26,20 +26,20 @@ public class IconTextTabsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_text_tabs);
-        this.toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(this.toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        this.viewPager = findViewById(R.id.viewpager);
-        setupViewPager(this.viewPager);
-        this.tabLayout = findViewById(R.id.tabs);
-        this.tabLayout.setupWithViewPager(this.viewPager);
+        viewPager = findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+        tabLayout = findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
     }
 
     private void setupTabIcons() {
-        this.tabLayout.getTabAt(0).setIcon(this.tabIcons[0]);
-        this.tabLayout.getTabAt(1).setIcon(this.tabIcons[1]);
-        this.tabLayout.getTabAt(2).setIcon(this.tabIcons[2]);
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -59,20 +59,20 @@ public class IconTextTabsActivity extends AppCompatActivity {
         }
 
         public Fragment getItem(int position) {
-            return this.mFragmentList.get(position);
+            return mFragmentList.get(position);
         }
 
         public int getCount() {
-            return this.mFragmentList.size();
+            return mFragmentList.size();
         }
 
         public void addFrag(Fragment fragment, String title) {
-            this.mFragmentList.add(fragment);
-            this.mFragmentTitleList.add(title);
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
         }
 
         public CharSequence getPageTitle(int position) {
-            return this.mFragmentTitleList.get(position);
+            return mFragmentTitleList.get(position);
         }
     }
 }
