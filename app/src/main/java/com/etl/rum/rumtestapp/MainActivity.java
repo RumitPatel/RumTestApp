@@ -42,7 +42,6 @@ import com.etl.rum.rumtestapp.locationAndPermissionTestActivity.LocationAndPermi
 import com.etl.rum.rumtestapp.mockLocation.MockLocationCheckActivity;
 import com.etl.rum.rumtestapp.mpChart.MPChartActivity;
 import com.etl.rum.rumtestapp.notificatoinHeadsUp.NotificationHeadsUpActivity;
-import com.etl.rum.rumtestapp.paytmTest.TestPaytmActivity;
 import com.etl.rum.rumtestapp.qrCodeRead.QRCodeReadActivity;
 import com.etl.rum.rumtestapp.reCaptchaTest.ReCaptchaTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest.RotateWithScrollTestActivity;
@@ -55,7 +54,6 @@ import com.etl.rum.rumtestapp.tabActivities.IconTextTabsActivity;
 import com.etl.rum.rumtestapp.tabActivities.TabScrollable;
 import com.etl.rum.rumtestapp.tabActivities.TabSimple;
 import com.etl.rum.rumtestapp.temp.TempData;
-import com.etl.rum.rumtestapp.testAll.TestAllActivity;
 import com.etl.rum.rumtestapp.timeZoneTest.TimeZoneTestActvity;
 import com.etl.rum.rumtestapp.webViewWIthPostDataTest.WebViewWithPostActivity;
 import com.etl.rum.rumtestapp.workManager.WorkManagerActivity;
@@ -76,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         showDeviceINfo();
-        testOuterMethod();
 
         mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
@@ -134,15 +131,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .appendQueryParameter("destination", "18.5204" + "," + "73.8567");
 
         startActivity(new Intent(Intent.ACTION_VIEW, directionsBuilder.build()));
-    }
-
-    private void testOuterMethod() {
-
-        int[] array1 = new int[]{1, 2, 3, 4};
-
-        for (int element : array1) {
-            System.out.println("Element: " + element);
-        }
     }
 
     private void testJSONData() {
@@ -207,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
+    private class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
         OnItemClickMyListener() {
         }
 
@@ -252,9 +240,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 12:
 //                    startActivity(new Intent(mContext, BroadCastReceiverTestActivity.class));
                     return;
-                case 13:
-                    startActivity(new Intent(mContext, TestPaytmActivity.class));
-                    break;
                 case 14:
                     startActivity(new Intent(mContext, CalenderViewTest.class));
                     break;
@@ -284,12 +269,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 24:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
-                    break;
-                case 25:
-                    startActivity(new Intent(mContext, /*TestAllActivity2.class*/TestAllActivity.class));
-                    break;
-                case 26:
-//                    startActivity(new Intent(mContext, Main2Activity.class));
                     break;
                 case 27:
                     startActivity(new Intent(mContext, LocalizationTest.class));
