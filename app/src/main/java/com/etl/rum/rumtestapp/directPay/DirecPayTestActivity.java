@@ -9,13 +9,6 @@ import android.webkit.WebView;
 import com.etl.rum.rumtestapp.R;
 import com.toml.dp.util.AES128Bit;
 
-import org.apache.http.util.EncodingUtils;
-
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by FatehAli Asamadi on 1/4/2018.
  * DirecPayTestActivity
@@ -145,7 +138,7 @@ public class DirecPayTestActivity extends AppCompatActivity {
         String html = "<!DOCTYPE html>" +
                 "<html>" +
                 "<body>" +
-                "<form name='ecom' method='post' action='" +url+ "'>" +
+                "<form name='ecom' method='post' action='" + url + "'>" +
                 "  <input type='hidden' name='requestparameter' value='" + requestParams + "'><br>" +
                 "  <input type='hidden' name='billingDtls' value='" + billingDetails + "'><br>" +
                 "  <input type='hidden' name='shippingDtls' value='" + shippingDetails + "'><br>" +
