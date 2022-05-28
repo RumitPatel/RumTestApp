@@ -27,7 +27,6 @@ import com.etl.rum.rumtestapp.PlaceApi.TestPlaceAPIActivity;
 import com.etl.rum.rumtestapp.RecyclerViewWithHeader.RecyclerViewWithHeaderActivity;
 import com.etl.rum.rumtestapp.adapters.RecyclerViewAdapter;
 import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivitiesTest;
-import com.etl.rum.rumtestapp.callbackWebViewTest.WebViewCallBackTestActivity;
 import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActivity;
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
@@ -206,9 +205,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 2:
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
-                    break;
-                case 18:
-                    startActivity(new Intent(mContext, WebViewCallBackTestActivity.class));
                     break;
                 case 19:
                     startActivity(new Intent(mContext, DateTimeConverzationTestActivity.class));
