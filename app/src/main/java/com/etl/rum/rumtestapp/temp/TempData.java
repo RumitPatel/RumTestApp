@@ -21,7 +21,7 @@ public class TempData {
     }
 
     public ArrayList<MyInfo> getTempStringArray() {
-        return new C02321();
+        return new MyArrayList();
     }
 
     public ArrayList<MyInfo> getTempStringArray2() {
@@ -39,8 +39,8 @@ public class TempData {
         }
     }
 
-    private static class C02321 extends ArrayList<MyInfo> {
-        C02321() {
+    private static class MyArrayList extends ArrayList<MyInfo> {
+        MyArrayList() {
             MyInfo myInfo = new MyInfo();
             myInfo.setName("simple tabs");
             myInfo.setAddress("");
