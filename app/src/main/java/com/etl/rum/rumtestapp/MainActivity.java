@@ -240,9 +240,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 12:
 //                    startActivity(new Intent(mContext, BroadCastReceiverTestActivity.class));
                     return;
-                case 13:
-                    startActivity(new Intent(mContext, TestPaytmActivity.class));
-                    break;
                 case 14:
                     startActivity(new Intent(mContext, CalenderViewTest.class));
                     break;
