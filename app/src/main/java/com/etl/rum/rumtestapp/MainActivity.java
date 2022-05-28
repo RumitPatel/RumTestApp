@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
+    private class OnItemClickMyListener implements RecyclerViewAdapter.OnItemClickMyListener {
         OnItemClickMyListener() {
         }
 
@@ -276,7 +276,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
                 case 25:
-                    startActivity(new Intent(mContext, /*TestAllActivity2.class*/TestAllActivity.class));
+                    startActivity(new Intent(mContext, TestAllActivity.class));
                     break;
                 case 26:
 //                    startActivity(new Intent(mContext, Main2Activity.class));

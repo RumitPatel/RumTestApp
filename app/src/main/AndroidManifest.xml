@@ -108,7 +108,6 @@
         <activity android:name=".RecyclerViewWithHeader.RecyclerViewWithHeaderActivity" />
         <activity android:name=".NofificationVibration.NofificationVibrationActivity" />
         <activity android:name=".LocationUpdate.LocationUpdateActivity" />
-        <activity android:name=".testAll.TestAllActivity2" />
         <activity android:name=".workManager.WorkManagerActivity" />
         <activity android:name=".speech_to_text.SpeechToTextActivity" />
         <activity android:name=".downloadWithProgress.DownloadWithNotificationProgress" />
