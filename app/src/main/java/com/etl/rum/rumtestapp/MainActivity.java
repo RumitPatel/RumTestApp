@@ -210,9 +210,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 4:
                     startActivity(new Intent(mContext, WebViewWithPostActivity.class));
                     break;
-                case 23:
-                    startActivity(new Intent(mContext, StripeTestActivity.class));
-                    break;
                 case 24:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
