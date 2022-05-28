@@ -27,7 +27,6 @@ import com.etl.rum.rumtestapp.PlaceApi.TestPlaceAPIActivity;
 import com.etl.rum.rumtestapp.RecyclerViewWithHeader.RecyclerViewWithHeaderActivity;
 import com.etl.rum.rumtestapp.adapters.RecyclerViewAdapter;
 import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivitiesTest;
-import com.etl.rum.rumtestapp.calenderViewTest.CalenderViewTest;
 import com.etl.rum.rumtestapp.callbackWebViewTest.WebViewCallBackTestActivity;
 import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActivity;
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
