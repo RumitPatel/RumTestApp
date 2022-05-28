@@ -67,16 +67,6 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("Facebook Auth with Firebase");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
-            myInfo.setName("Stripe Test");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
             myInfo.setName("Notification HeadsUp test");
             myInfo.setAddress("");
             add(myInfo);

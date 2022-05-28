@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 4:
                     startActivity(new Intent(mContext, WebViewWithPostActivity.class));
                     break;
-                case 24:
+                case 5:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
                 case 27:
