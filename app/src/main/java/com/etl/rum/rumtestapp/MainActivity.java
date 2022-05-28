@@ -242,9 +242,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 14:
                     startActivity(new Intent(mContext, CalenderViewTest.class));
                     break;
-                case 15:
-                    startActivity(new Intent(mContext, FCMsmsTest.class));
-                    break;
                 case 16:
                     startActivity(new Intent(mContext, DirecPayTestActivity.class));
                     break;
