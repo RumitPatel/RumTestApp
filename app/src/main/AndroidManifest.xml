@@ -49,7 +49,6 @@
         <activity android:name=".tabActivities.TabSimple" />
         <activity android:name=".tabActivities.TabScrollable" />
         <activity android:name=".tabActivities.IconTextTabsActivity" />
-        <activity android:name=".paytmTest.TestPaytmActivity" />
         <activity android:name=".calenderViewTest.CalenderViewTest" />
         <activity android:name=".fcmSMSTest.FCMsmsTest" />
         <activity android:name=".directPay.DirecPayTestActivity" />

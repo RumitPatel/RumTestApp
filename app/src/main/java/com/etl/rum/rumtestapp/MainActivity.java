@@ -42,7 +42,6 @@ import com.etl.rum.rumtestapp.locationAndPermissionTestActivity.LocationAndPermi
 import com.etl.rum.rumtestapp.mockLocation.MockLocationCheckActivity;
 import com.etl.rum.rumtestapp.mpChart.MPChartActivity;
 import com.etl.rum.rumtestapp.notificatoinHeadsUp.NotificationHeadsUpActivity;
-import com.etl.rum.rumtestapp.paytmTest.TestPaytmActivity;
 import com.etl.rum.rumtestapp.qrCodeRead.QRCodeReadActivity;
 import com.etl.rum.rumtestapp.reCaptchaTest.ReCaptchaTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest.RotateWithScrollTestActivity;
