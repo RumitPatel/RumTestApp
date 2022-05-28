@@ -20,7 +20,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.etl.rum.rumtestapp.FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity;
 import com.etl.rum.rumtestapp.LocalizationTest.LocalizationTest;
 import com.etl.rum.rumtestapp.NofificationVibration.NofificationVibrationActivity;
 import com.etl.rum.rumtestapp.PlaceApi.TestPlaceAPIActivity;
@@ -210,9 +209,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 4:
                     startActivity(new Intent(mContext, WebViewWithPostActivity.class));
-                    break;
-                case 22:
-                    startActivity(new Intent(mContext, FacebookAuthFirebaseActivity.class));
                     break;
                 case 23:
                     startActivity(new Intent(mContext, StripeTestActivity.class));
