@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         showDeviceINfo();
-        testOuterMethod();
 
         mContext = this;
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
@@ -134,15 +133,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .appendQueryParameter("destination", "18.5204" + "," + "73.8567");
 
         startActivity(new Intent(Intent.ACTION_VIEW, directionsBuilder.build()));
-    }
-
-    private void testOuterMethod() {
-
-        int[] array1 = new int[]{1, 2, 3, 4};
-
-        for (int element : array1) {
-            System.out.println("Element: " + element);
-        }
     }
 
     private void testJSONData() {
