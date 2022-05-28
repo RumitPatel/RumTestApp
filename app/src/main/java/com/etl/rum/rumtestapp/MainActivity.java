@@ -30,7 +30,6 @@ import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivities
 import com.etl.rum.rumtestapp.callbackWebViewTest.WebViewCallBackTestActivity;
 import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActivity;
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
-import com.etl.rum.rumtestapp.directPay.DirecPayTestActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
 import com.etl.rum.rumtestapp.drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity;
 import com.etl.rum.rumtestapp.ePrescriptionTest.EPrescriptionTestActivity;
@@ -207,9 +206,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 2:
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
-                    break;
-                case 16:
-                    startActivity(new Intent(mContext, DirecPayTestActivity.class));
                     break;
                 case 18:
                     startActivity(new Intent(mContext, WebViewCallBackTestActivity.class));
