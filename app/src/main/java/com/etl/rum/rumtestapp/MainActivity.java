@@ -212,10 +212,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 5:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
-                case 27:
+                case 6:
                     startActivity(new Intent(mContext, LocalizationTest.class));
                     break;
-                case 28:
+                case 7:
                     startActivity(new Intent(mContext, DialogFloatingActivity.class));
                     break;
                 case 29:
