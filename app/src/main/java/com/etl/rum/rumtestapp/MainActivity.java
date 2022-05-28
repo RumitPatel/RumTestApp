@@ -274,12 +274,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 24:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
-                case 25:
-//                    startActivity(new Intent(mContext, TestAllActivity.class));
-                    break;
-                case 26:
-//                    startActivity(new Intent(mContext, Main2Activity.class));
-                    break;
                 case 27:
                     startActivity(new Intent(mContext, LocalizationTest.class));
                     break;
