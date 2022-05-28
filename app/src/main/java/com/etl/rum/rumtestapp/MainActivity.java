@@ -218,16 +218,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 7:
                     startActivity(new Intent(mContext, DialogFloatingActivity.class));
                     break;
-                case 29:
+                case 8:
                     startActivity(new Intent(mContext, BroadCastFromMultipleActivitiesTest.class));
                     break;
-                case 30:
+                case 9:
                     startActivity(new Intent(mContext, TimeZoneTestActvity.class));
                     break;
-                case 31:
+                case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
                     break;
-                case 32:
+                case 11:
                     startActivity(new Intent(mContext, ReCaptchaTestActivity.class));
                     break;
                 case 33:

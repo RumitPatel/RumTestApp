@@ -6,12 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.etl.rum.rumtestapp.R;
-import com.etl.rum.rumtestapp.temp.AppUtils;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
 
 public class TimeZoneTestActvity extends AppCompatActivity {
 

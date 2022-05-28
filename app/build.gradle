@@ -56,8 +56,6 @@ dependencies {
     implementation 'com.facebook.android:facebook-android-sdk:4.32.0'
     implementation 'com.facebook.android:facebook-core:4.33.0'
     implementation 'com.facebook.android:facebook-login:4.33.0'
-    implementation 'com.stripe:stripe-android:7.0.0'
-    implementation 'com.cinetpay:sdk:2.7.1'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
 
