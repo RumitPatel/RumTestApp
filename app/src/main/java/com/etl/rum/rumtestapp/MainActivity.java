@@ -43,7 +43,6 @@ import com.etl.rum.rumtestapp.rotateWithScrollTest2.RotateWithScrollTestActivity
 import com.etl.rum.rumtestapp.signInWithGoogle.SignInWithGoogleActivity;
 import com.etl.rum.rumtestapp.speech_to_text.SpeechToTextActivity;
 import com.etl.rum.rumtestapp.steggeredTest.SteggeredLayoutActivity;
-import com.etl.rum.rumtestapp.stripeTest.StripeTestActivity;
 import com.etl.rum.rumtestapp.tabActivities.IconTextTabsActivity;
 import com.etl.rum.rumtestapp.tabActivities.TabScrollable;
 import com.etl.rum.rumtestapp.tabActivities.TabSimple;
