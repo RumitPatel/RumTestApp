@@ -82,7 +82,6 @@
         </activity>
         <activity android:name=".stripeTest.StripeTestActivity" />
         <activity android:name=".notificatoinHeadsUp.NotificationHeadsUpActivity" />
-        <activity android:name=".testAll.TestAllActivity" />
         <!-- end facebook -->
         <activity android:name=".LocalizationTest.LocalizationTest" />
         <activity android:name=".dialogFloatingActivity.DialogFloatingActivity" />
