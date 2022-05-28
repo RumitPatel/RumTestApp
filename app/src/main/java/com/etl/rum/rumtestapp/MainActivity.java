@@ -29,7 +29,6 @@ import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivities
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
 import com.etl.rum.rumtestapp.drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity;
-import com.etl.rum.rumtestapp.ePrescriptionTest.EPrescriptionTestActivity;
 import com.etl.rum.rumtestapp.fireStoreTest.FireStoreTestActivity;
 import com.etl.rum.rumtestapp.googleSheetAccess.GoogleSheetAccessActivity;
 import com.etl.rum.rumtestapp.locationAndPermissionTestActivity.LocationAndPermissionTestActivity;
@@ -272,9 +271,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, SignInWithGoogleActivity.class));
                     break;
                 case 26:
-                    startActivity(new Intent(mContext, EPrescriptionTestActivity.class));
-                    break;
-                case 27:
                     startActivity(new Intent(mContext, DrawRoundOnFingerTouchActivity.class));
                     break;
                 default:
