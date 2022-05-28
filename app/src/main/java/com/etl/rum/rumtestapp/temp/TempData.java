@@ -97,11 +97,6 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("Test Recaptcha");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
             myInfo.setName("GeoCode Test");
             myInfo.setAddress("");
             add(myInfo);
