@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 2:
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
                     break;
-                case 20:
+                case 3:
                     startActivity(new Intent(mContext, FireStoreTestActivity.class));
                     break;
                 case 21:
