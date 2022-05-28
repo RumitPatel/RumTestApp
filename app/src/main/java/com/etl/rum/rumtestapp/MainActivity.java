@@ -226,58 +226,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
                     break;
-                case 33:
+                case 11:
                     startActivity(new Intent(mContext, GeoCodeActivity.class));
                     break;
-                case 34:
+                case 12:
                     startActivity(new Intent(mContext, TestPlaceAPIActivity.class));
                     break;
-                case 35:
+                case 13:
                     startActivity(new Intent(mContext, MockLocationCheckActivity.class));
                     break;
-                case 36:
+                case 14:
                     startActivity(new Intent(mContext, RotateWithScrollTestActivity.class));
                     break;
-                case 37:
+                case 15:
                     startActivity(new Intent(mContext, RotateWithScrollTestActivity2.class));
                     break;
-                case 38:
+                case 16:
                     startActivity(new Intent(mContext, GoogleSheetAccessActivity.class));
                     break;
-                case 39:
+                case 17:
                     startActivity(new Intent(mContext, SteggeredLayoutActivity.class));
                     break;
-                case 40:
+                case 18:
                     startActivity(new Intent(mContext, RecyclerViewWithHeaderActivity.class));
                     break;
-                case 41:
+                case 19:
                     startActivity(new Intent(mContext, NofificationVibrationActivity.class));
                     break;
-                case 42:
+                case 20:
                     startActivity(new Intent(mContext, WorkManagerActivity.class));
                     break;
-                case 43:
+                case 21:
                     startActivity(new Intent(mContext, SpeechToTextActivity.class));
                     break;
-                case 44:
-//                    startActivity(new Intent(mContext, CNEtPayActivity.class));
-                    break;
-                case 45:
+                case 22:
                     startActivity(new Intent(mContext, DownloadWithNotificationProgress.class));
                     break;
-                case 46:
+                case 23:
                     startActivity(new Intent(mContext, MPChartActivity.class));
                     break;
-                case 47:
+                case 24:
                     startActivity(new Intent(mContext, QRCodeReadActivity.class));
                     break;
-                case 48:
+                case 25:
                     startActivity(new Intent(mContext, SignInWithGoogleActivity.class));
                     break;
-                case 49:
+                case 26:
                     startActivity(new Intent(mContext, EPrescriptionTestActivity.class));
                     break;
-                case 50:
+                case 27:
                     startActivity(new Intent(mContext, DrawRoundOnFingerTouchActivity.class));
                     break;
                 default:

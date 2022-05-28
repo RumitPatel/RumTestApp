@@ -152,11 +152,6 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("CInetPay");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
             myInfo.setName("Download file with notification progress");
             myInfo.setAddress("");
             add(myInfo);
