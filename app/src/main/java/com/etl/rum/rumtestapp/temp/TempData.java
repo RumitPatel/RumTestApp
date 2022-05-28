@@ -72,16 +72,6 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("Test All");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
-            myInfo.setName("Kotlin Test");
-            myInfo.setAddress("");
-            add(myInfo);
-
-            myInfo = new MyInfo();
             myInfo.setName("Localization Test");
             myInfo.setAddress("");
             add(myInfo);
