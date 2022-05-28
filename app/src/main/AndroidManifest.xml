@@ -50,7 +50,6 @@
         <activity android:name=".tabActivities.TabScrollable" />
         <activity android:name=".tabActivities.IconTextTabsActivity" />
         <activity android:name=".calenderViewTest.CalenderViewTest" />
-        <activity android:name=".fcmSMSTest.FCMsmsTest" />
         <activity android:name=".directPay.DirecPayTestActivity" />
         <activity android:name=".callbackWebViewTest.WebViewCallBackTestActivity" />
         <activity android:name=".dateTimeConversation.DateTimeConverzationTestActivity" />

@@ -20,22 +20,16 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.etl.rum.rumtestapp.FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity;
 import com.etl.rum.rumtestapp.LocalizationTest.LocalizationTest;
 import com.etl.rum.rumtestapp.NofificationVibration.NofificationVibrationActivity;
 import com.etl.rum.rumtestapp.PlaceApi.TestPlaceAPIActivity;
 import com.etl.rum.rumtestapp.RecyclerViewWithHeader.RecyclerViewWithHeaderActivity;
 import com.etl.rum.rumtestapp.adapters.RecyclerViewAdapter;
 import com.etl.rum.rumtestapp.broadcastAndDialog.BroadCastFromMultipleActivitiesTest;
-import com.etl.rum.rumtestapp.calenderViewTest.CalenderViewTest;
-import com.etl.rum.rumtestapp.callbackWebViewTest.WebViewCallBackTestActivity;
-import com.etl.rum.rumtestapp.dateTimeConversation.DateTimeConverzationTestActivity;
 import com.etl.rum.rumtestapp.dialogFloatingActivity.DialogFloatingActivity;
-import com.etl.rum.rumtestapp.directPay.DirecPayTestActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
 import com.etl.rum.rumtestapp.drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity;
 import com.etl.rum.rumtestapp.ePrescriptionTest.EPrescriptionTestActivity;
-import com.etl.rum.rumtestapp.fcmSMSTest.FCMsmsTest;
 import com.etl.rum.rumtestapp.fireStoreTest.FireStoreTestActivity;
 import com.etl.rum.rumtestapp.googleSheetAccess.GoogleSheetAccessActivity;
 import com.etl.rum.rumtestapp.locationAndPermissionTestActivity.LocationAndPermissionTestActivity;
@@ -43,13 +37,11 @@ import com.etl.rum.rumtestapp.mockLocation.MockLocationCheckActivity;
 import com.etl.rum.rumtestapp.mpChart.MPChartActivity;
 import com.etl.rum.rumtestapp.notificatoinHeadsUp.NotificationHeadsUpActivity;
 import com.etl.rum.rumtestapp.qrCodeRead.QRCodeReadActivity;
-import com.etl.rum.rumtestapp.reCaptchaTest.ReCaptchaTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest.RotateWithScrollTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest2.RotateWithScrollTestActivity2;
 import com.etl.rum.rumtestapp.signInWithGoogle.SignInWithGoogleActivity;
 import com.etl.rum.rumtestapp.speech_to_text.SpeechToTextActivity;
 import com.etl.rum.rumtestapp.steggeredTest.SteggeredLayoutActivity;
-import com.etl.rum.rumtestapp.stripeTest.StripeTestActivity;
 import com.etl.rum.rumtestapp.tabActivities.IconTextTabsActivity;
 import com.etl.rum.rumtestapp.tabActivities.TabScrollable;
 import com.etl.rum.rumtestapp.tabActivities.TabSimple;
@@ -211,135 +203,78 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, IconTextTabsActivity.class));
                     break;
                 case 3:
-//                    startActivity(new Intent(mContext, TabOnlyIcon.class));
-                    return;
-                case 4:
-//                    startActivity(new Intent(mContext, TabCustom.class));
-                    return;
-                case 5:
-//                    startActivity(new Intent(mContext, TestNestedScroll.class));
-                    return;
-                case 6:
-//                    startActivity(new Intent(mContext, MyListActivity.class));
-                    return;
-                case 7:
-//                    startActivity(new Intent(mContext, MatrixTest.class));
-                    return;
-                case 8:
-//                    startActivity(new Intent(mContext, MatrixTest2.class));
-                    return;
-                case 9:
-//                    startActivity(new Intent(mContext, TestThisUsage.class));
-                    return;
-                case 10:
-//                    startActivity(new Intent(mContext, LogicTest.class));
-                    return;
-                case 11:
-//                    startActivity(new Intent(mContext, TestActivities.class));
-                    return;
-                case 12:
-//                    startActivity(new Intent(mContext, BroadCastReceiverTestActivity.class));
-                    return;
-                case 14:
-                    startActivity(new Intent(mContext, CalenderViewTest.class));
-                    break;
-                case 15:
-                    startActivity(new Intent(mContext, FCMsmsTest.class));
-                    break;
-                case 16:
-                    startActivity(new Intent(mContext, DirecPayTestActivity.class));
-                    break;
-                case 18:
-                    startActivity(new Intent(mContext, WebViewCallBackTestActivity.class));
-                    break;
-                case 19:
-                    startActivity(new Intent(mContext, DateTimeConverzationTestActivity.class));
-                    break;
-                case 20:
                     startActivity(new Intent(mContext, FireStoreTestActivity.class));
                     break;
-                case 21:
+                case 4:
                     startActivity(new Intent(mContext, WebViewWithPostActivity.class));
                     break;
-                case 22:
-                    startActivity(new Intent(mContext, FacebookAuthFirebaseActivity.class));
-                    break;
-                case 23:
-                    startActivity(new Intent(mContext, StripeTestActivity.class));
-                    break;
-                case 24:
+                case 5:
                     startActivity(new Intent(mContext, NotificationHeadsUpActivity.class));
                     break;
-                case 27:
+                case 6:
                     startActivity(new Intent(mContext, LocalizationTest.class));
                     break;
-                case 28:
+                case 7:
                     startActivity(new Intent(mContext, DialogFloatingActivity.class));
                     break;
-                case 29:
+                case 8:
                     startActivity(new Intent(mContext, BroadCastFromMultipleActivitiesTest.class));
                     break;
-                case 30:
+                case 9:
                     startActivity(new Intent(mContext, TimeZoneTestActvity.class));
                     break;
-                case 31:
+                case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
                     break;
-                case 32:
-                    startActivity(new Intent(mContext, ReCaptchaTestActivity.class));
-                    break;
-                case 33:
+                case 11:
                     startActivity(new Intent(mContext, GeoCodeActivity.class));
                     break;
-                case 34:
+                case 12:
                     startActivity(new Intent(mContext, TestPlaceAPIActivity.class));
                     break;
-                case 35:
+                case 13:
                     startActivity(new Intent(mContext, MockLocationCheckActivity.class));
                     break;
-                case 36:
+                case 14:
                     startActivity(new Intent(mContext, RotateWithScrollTestActivity.class));
                     break;
-                case 37:
+                case 15:
                     startActivity(new Intent(mContext, RotateWithScrollTestActivity2.class));
                     break;
-                case 38:
+                case 16:
                     startActivity(new Intent(mContext, GoogleSheetAccessActivity.class));
                     break;
-                case 39:
+                case 17:
                     startActivity(new Intent(mContext, SteggeredLayoutActivity.class));
                     break;
-                case 40:
+                case 18:
                     startActivity(new Intent(mContext, RecyclerViewWithHeaderActivity.class));
                     break;
-                case 41:
+                case 19:
                     startActivity(new Intent(mContext, NofificationVibrationActivity.class));
                     break;
-                case 42:
+                case 20:
                     startActivity(new Intent(mContext, WorkManagerActivity.class));
                     break;
-                case 43:
+                case 21:
                     startActivity(new Intent(mContext, SpeechToTextActivity.class));
                     break;
-                case 44:
-//                    startActivity(new Intent(mContext, CNEtPayActivity.class));
-                    break;
-                case 45:
+                case 22:
                     startActivity(new Intent(mContext, DownloadWithNotificationProgress.class));
                     break;
-                case 46:
+                case 23:
                     startActivity(new Intent(mContext, MPChartActivity.class));
                     break;
-                case 47:
+                case 24:
                     startActivity(new Intent(mContext, QRCodeReadActivity.class));
                     break;
-                case 48:
+                case 25:
                     startActivity(new Intent(mContext, SignInWithGoogleActivity.class));
                     break;
-                case 49:
+                case 26:
                     startActivity(new Intent(mContext, EPrescriptionTestActivity.class));
                     break;
-                case 50:
+                case 27:
                     startActivity(new Intent(mContext, DrawRoundOnFingerTouchActivity.class));
                     break;
                 default:

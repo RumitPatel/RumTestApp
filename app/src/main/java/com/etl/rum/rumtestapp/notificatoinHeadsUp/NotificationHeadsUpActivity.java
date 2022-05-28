@@ -17,11 +17,6 @@ import com.etl.rum.rumtestapp.R;
 
 import java.util.Random;
 
-/**
- * Created by FatehAli Asamadi on 2/5/2018.
- * NotificationHeadsUpActivity
- */
-
 public class NotificationHeadsUpActivity extends AppCompatActivity {
 
     private Context mContext;

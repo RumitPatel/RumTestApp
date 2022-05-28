@@ -24,11 +24,6 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by FatehAli Asamadi on 1/30/2018.
- * FireStoreTestActivity
- */
-
 public class FireStoreTestActivity extends AppCompatActivity {
 
     private static final String COLLECTION_NAME = "users";
