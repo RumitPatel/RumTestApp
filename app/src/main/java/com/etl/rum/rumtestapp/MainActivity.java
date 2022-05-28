@@ -37,7 +37,6 @@ import com.etl.rum.rumtestapp.mockLocation.MockLocationCheckActivity;
 import com.etl.rum.rumtestapp.mpChart.MPChartActivity;
 import com.etl.rum.rumtestapp.notificatoinHeadsUp.NotificationHeadsUpActivity;
 import com.etl.rum.rumtestapp.qrCodeRead.QRCodeReadActivity;
-import com.etl.rum.rumtestapp.reCaptchaTest.ReCaptchaTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest.RotateWithScrollTestActivity;
 import com.etl.rum.rumtestapp.rotateWithScrollTest2.RotateWithScrollTestActivity2;
 import com.etl.rum.rumtestapp.signInWithGoogle.SignInWithGoogleActivity;
@@ -226,9 +225,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
-                    break;
-                case 11:
-                    startActivity(new Intent(mContext, ReCaptchaTestActivity.class));
                     break;
                 case 33:
                     startActivity(new Intent(mContext, GeoCodeActivity.class));
