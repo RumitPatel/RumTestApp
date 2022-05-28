@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 3:
                     startActivity(new Intent(mContext, FireStoreTestActivity.class));
                     break;
-                case 21:
+                case 4:
                     startActivity(new Intent(mContext, WebViewWithPostActivity.class));
                     break;
                 case 22:
