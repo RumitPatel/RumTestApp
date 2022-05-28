@@ -35,7 +35,6 @@ import com.etl.rum.rumtestapp.directPay.DirecPayTestActivity;
 import com.etl.rum.rumtestapp.downloadWithProgress.DownloadWithNotificationProgress;
 import com.etl.rum.rumtestapp.drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity;
 import com.etl.rum.rumtestapp.ePrescriptionTest.EPrescriptionTestActivity;
-import com.etl.rum.rumtestapp.fcmSMSTest.FCMsmsTest;
 import com.etl.rum.rumtestapp.fireStoreTest.FireStoreTestActivity;
 import com.etl.rum.rumtestapp.googleSheetAccess.GoogleSheetAccessActivity;
 import com.etl.rum.rumtestapp.locationAndPermissionTestActivity.LocationAndPermissionTestActivity;
