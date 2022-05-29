@@ -142,7 +142,7 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("WorkManager Test");
+            myInfo.setName("WorkManager");
             myInfo.setAddress("");
             add(myInfo);
 
@@ -172,7 +172,7 @@ public class TempData {
             add(myInfo);
 
             myInfo = new MyInfo();
-            myInfo.setName("Draw round on finger touch Test");
+            myInfo.setName("Draw round on finger touch");
             myInfo.setAddress("");
             add(myInfo);
         }
