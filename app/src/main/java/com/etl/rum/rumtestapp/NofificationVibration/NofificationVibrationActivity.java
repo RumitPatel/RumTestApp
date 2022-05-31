@@ -159,22 +159,6 @@ public class NofificationVibrationActivity extends AppCompatActivity {
             super.onPostExecute(result);
 
             addNotificationBigStyle(result);
-
-            /*Intent intent = new Intent();
-            intent.putExtra("key", "value");
-            PendingIntent pendingIntent = PendingIntent.getActivity(mContext, 100, intent, PendingIntent.FLAG_ONE_SHOT);
-
-            NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-            Notification notif = new Notification.Builder(mContext)
-                    .setContentIntent(pendingIntent)
-                    .setContentTitle(title)
-                    .setContentText(message)
-                    .setSmallIcon(R.mipmap.ic_launcher)
-                    .setLargeIcon(result)
-                    .setStyle(new Notification.BigPictureStyle().bigPicture(result))
-                    .build();
-            notif.flags |= Notification.FLAG_AUTO_CANCEL;
-            notificationManager.notify(1, notif);*/
         }
     }
 }
