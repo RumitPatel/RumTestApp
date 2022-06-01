@@ -69,7 +69,7 @@ public class SignInWithGoogleActivity extends AppCompatActivity {
             String googleID = account.getId();
             Toast.makeText(mContext, "loggedIn with :" + loginEmail, Toast.LENGTH_SHORT).show();
         } else { // User is hasn't signedin yet
-
+            Toast.makeText(mContext, "Login failed " , Toast.LENGTH_SHORT).show();
         }
     }
 
