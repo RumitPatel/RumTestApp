@@ -52,9 +52,9 @@ public class RecyclerViewAdapter extends Adapter<RecyclerViewAdapter.MyViewHolde
     }
 
     public static class MyViewHolder extends ViewHolder {
-        private CardView cardView;
-        private View mainViewCell;
-        private TextView textViewName;
+        private final CardView cardView;
+        private final View mainViewCell;
+        private final TextView textViewName;
 
         public MyViewHolder(View itemView) {
             super(itemView);

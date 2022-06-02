@@ -14,7 +14,7 @@ public class SteggeredLayoutActivity extends AppCompatActivity {
 
     private Context mContext;
 
-    private RecyclerViewSteggeredAdapter.OnItemClickMyListener mOnItemClickMyListener = new RecyclerViewSteggeredAdapter.OnItemClickMyListener() {
+    private final RecyclerViewSteggeredAdapter.OnItemClickMyListener mOnItemClickMyListener = new RecyclerViewSteggeredAdapter.OnItemClickMyListener() {
         @Override
         public void onItemClick(int i) {
 

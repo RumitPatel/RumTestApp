@@ -18,7 +18,7 @@ import com.etl.rum.rumtestapp.R;
 public class ParentActivity extends AppCompatActivity {
 
     private Context mContext;
-    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String message = intent.getStringExtra("message");

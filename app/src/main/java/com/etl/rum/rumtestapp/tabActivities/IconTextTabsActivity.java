@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IconTextTabsActivity extends AppCompatActivity {
-    private int[] tabIcons = new int[]{R.drawable.ic_tab_favourite, R.drawable.ic_tab_call, R.drawable.ic_tab_contacts};
+    private final int[] tabIcons = new int[]{R.drawable.ic_tab_favourite, R.drawable.ic_tab_call, R.drawable.ic_tab_contacts};
     private TabLayout tabLayout;
     private Toolbar toolbar;
     private ViewPager viewPager;

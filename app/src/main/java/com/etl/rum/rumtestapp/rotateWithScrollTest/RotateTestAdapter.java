@@ -22,9 +22,9 @@ import java.util.List;
 
 public class RotateTestAdapter extends RecyclerView.Adapter<RotateTestAdapter.MyViewHolder> {
 
-    private Context mContext;
-    private List<DoctorInfo> mArrayListDoctorInfos;
-    private OnMyScrollListener mOnMyScrollListener;
+    private final Context mContext;
+    private final List<DoctorInfo> mArrayListDoctorInfos;
+    private final OnMyScrollListener mOnMyScrollListener;
 
     public RotateTestAdapter(Context context, List<DoctorInfo> arrayListDoctorInfos, OnMyScrollListener onMyScrollListener) {
         mContext = context;
@@ -61,9 +61,9 @@ public class RotateTestAdapter extends RecyclerView.Adapter<RotateTestAdapter.My
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private LinearLayout linearLayout;
-        private TextView textView;
-        private ImageView imageView;
+        private final LinearLayout linearLayout;
+        private final TextView textView;
+        private final ImageView imageView;
 
         MyViewHolder(View view) {
             super(view);

@@ -22,8 +22,8 @@ public class RotateWithScrollTestActivity extends AppCompatActivity {
     private ImageView imageViewTemp;
     private RotateTestAdapter mRotateTestAdapter;
 
-    private ArrayList<ImageView> mArrayListImageView = new ArrayList<>();
-    private OnMyScrollListener mOnMyScrollListener = new OnMyScrollListener() {
+    private final ArrayList<ImageView> mArrayListImageView = new ArrayList<>();
+    private final OnMyScrollListener mOnMyScrollListener = new OnMyScrollListener() {
 
         @Override
         public void addViewForRotate(ImageView imageView) {

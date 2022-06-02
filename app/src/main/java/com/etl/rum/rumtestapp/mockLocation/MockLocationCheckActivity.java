@@ -31,7 +31,7 @@ public class MockLocationCheckActivity extends AppCompatActivity {
         findViewById(R.id.btnCheckLocation).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext, "Mock Location : " + String.valueOf(isMockSettingsON(mContext)), Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Mock Location : " + isMockSettingsON(mContext), Toast.LENGTH_SHORT).show();
             }
         });
     }

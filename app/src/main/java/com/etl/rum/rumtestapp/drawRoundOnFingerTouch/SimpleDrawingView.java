@@ -18,7 +18,7 @@ public class SimpleDrawingView extends View {
     // defines paint and canvas
     private Paint drawPaint;
     // Store circles to draw each time the user touches down
-    private List<Point> circlePoints;
+    private final List<Point> circlePoints;
 
     private OnImageTouchListener mOnImageTouchListener;
 

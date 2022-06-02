@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class RecyclerViewSteggeredAdapter extends Adapter<RecyclerViewSteggeredAdapter.MyViewHolder> {
     private ArrayList<MyInfo> mArrayListMyInfos = new ArrayList();
-    private OnItemClickMyListener mOnItemClickMyListener;
+    private final OnItemClickMyListener mOnItemClickMyListener;
 
     public RecyclerViewSteggeredAdapter(ArrayList<MyInfo> arrayListMyInfos, OnItemClickMyListener onItemClickMyListener) {
         this.mArrayListMyInfos = arrayListMyInfos;
@@ -52,9 +52,9 @@ public class RecyclerViewSteggeredAdapter extends Adapter<RecyclerViewSteggeredA
     }
 
     static class MyViewHolder extends ViewHolder {
-        private CardView cardView;
-        private View mainViewCell;
-        private TextView textViewName;
+        private final CardView cardView;
+        private final View mainViewCell;
+        private final TextView textViewName;
 
         MyViewHolder(View itemView) {
             super(itemView);
