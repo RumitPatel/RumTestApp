@@ -19,19 +19,12 @@ import java.util.Random;
 
 public class NotificationHeadsUpActivity extends AppCompatActivity {
 
-    private Context mContext;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_heads_up);
 
-        initComponents();
         setListeners();
-    }
-
-    private void initComponents() {
-        mContext = this;
     }
 
     private void setListeners() {
