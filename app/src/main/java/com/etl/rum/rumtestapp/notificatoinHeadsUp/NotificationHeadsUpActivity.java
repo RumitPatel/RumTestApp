@@ -26,12 +26,9 @@ public class NotificationHeadsUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_heads_up);
 
-        initComponents();
-        setListeners();
-    }
-
-    private void initComponents() {
         mContext = this;
+
+        setListeners();
     }
 
     private void setListeners() {
@@ -45,7 +42,7 @@ public class NotificationHeadsUpActivity extends AppCompatActivity {
 
     private void notificationTest() {
         Intent intent;
-        intent = new Intent(this, NotificationHeadsUpActivity.class);
+        intent = new Intent(mContext, NotificationHeadsUpActivity.class);
         Bundle bundle = new Bundle();
         bundle.putBoolean("isDisplayAlert", true);
         bundle.putString("NOTIFICATION_DATA", "data");
@@ -55,7 +52,7 @@ public class NotificationHeadsUpActivity extends AppCompatActivity {
                 PendingIntent.FLAG_UPDATE_CURRENT);
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(mContext)
                 .setSmallIcon(R.drawable.ic_event)
                 .setContentTitle("Title")
                 .setContentText("Body")

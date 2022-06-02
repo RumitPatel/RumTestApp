@@ -66,6 +66,6 @@ public class NotificationUtils {
 
     private static int getNotificationIcon() {
         boolean useWhiteIcon = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP);
-        return useWhiteIcon ? R.mipmap.ic_launcher : R.mipmap.ic_launcher;
+        return R.mipmap.ic_launcher;
     }
 }

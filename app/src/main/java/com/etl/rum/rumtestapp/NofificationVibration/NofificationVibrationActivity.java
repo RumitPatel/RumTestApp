@@ -123,8 +123,10 @@ public class NofificationVibrationActivity extends AppCompatActivity {
 
     public class generatePictureStyleNotification extends AsyncTask<String, Void, Bitmap> {
 
-        private Context mContext;
-        private String title, message, imageUrl;
+        private final Context mContext;
+        private final String title;
+        private final String message;
+        private final String imageUrl;
 
         generatePictureStyleNotification(Context context, String title, String message, String imageUrl) {
             super();

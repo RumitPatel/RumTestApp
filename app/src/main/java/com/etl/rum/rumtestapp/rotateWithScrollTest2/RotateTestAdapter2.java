@@ -24,8 +24,8 @@ import java.util.List;
 
 public class RotateTestAdapter2 extends RecyclerView.Adapter<RotateTestAdapter2.MyViewHolder> {
 
-    private Context mContext;
-    private List<DoctorInfo> mArrayListDoctorInfos;
+    private final Context mContext;
+    private final List<DoctorInfo> mArrayListDoctorInfos;
 
     public RotateTestAdapter2(Context context, List<DoctorInfo> arrayListDoctorInfos) {
         Log.e("@***@***@", "Constuctor called");
@@ -65,9 +65,9 @@ public class RotateTestAdapter2 extends RecyclerView.Adapter<RotateTestAdapter2.
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private LinearLayout linearLayout;
-        private TextView textView;
-        private ImageView imageView;
+        private final LinearLayout linearLayout;
+        private final TextView textView;
+        private final ImageView imageView;
 
         MyViewHolder(View view) {
             super(view);

@@ -38,14 +38,14 @@ public class DownloadWithNotificationProgress extends AppCompatActivity {
     private Context mContext;
 
     // Download content START
-    private int maxProgress = 100;
+    private final int maxProgress = 100;
     private float contentLength = 0;
     private float downloaded = 0;
-    private int DOWNLOAD_NOTIFICATION_ID = 1001;
+    private final int DOWNLOAD_NOTIFICATION_ID = 1001;
     private NotificationCompat.Builder notificationBuilder;
     private NotificationManagerCompat notificationManagerCompat;
     // Download content END
-    private BroadcastReceiver onDownloadComplete = new BroadcastReceiver() {
+    private final BroadcastReceiver onDownloadComplete = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             //Fetching the download id received with the broadcast
