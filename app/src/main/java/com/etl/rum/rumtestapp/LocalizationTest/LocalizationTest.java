@@ -18,6 +18,8 @@ import java.util.Locale;
 
 public class LocalizationTest extends AppCompatActivity {
 
+    private static final String ENGLISH = "en";
+    private static final String ARABIC = "ar";
     private FloatingActionButton fab;
     private Spinner spinner;
 
@@ -71,10 +73,10 @@ public class LocalizationTest extends AppCompatActivity {
     private void testLocalization() {
         String language;
         Locale ll = Locale.getDefault();
-        if (ll.getLanguage().equalsIgnoreCase("ar")) {
-            language = "en";
+        if (ll.getLanguage().equalsIgnoreCase(ARABIC)) {
+            language = ENGLISH;
         } else {
-            language = "ar";
+            language = ARABIC;
         }
 
         Locale locale = new Locale(language);
