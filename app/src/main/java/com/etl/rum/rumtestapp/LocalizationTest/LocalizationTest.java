@@ -1,5 +1,6 @@
 package com.etl.rum.rumtestapp.LocalizationTest;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,6 +21,7 @@ public class LocalizationTest extends AppCompatActivity {
 
     private static final String ENGLISH = "en";
     private static final String ARABIC = "ar";
+    private Context mContext;
     private FloatingActionButton fab;
     private Spinner spinner;
 
@@ -33,6 +35,8 @@ public class LocalizationTest extends AppCompatActivity {
     }
 
     private void initComponents() {
+        mContext = this;
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
@@ -55,10 +59,10 @@ public class LocalizationTest extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
-                    Toast.makeText(LocalizationTest.this, "English Selected", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "English Selected", Toast.LENGTH_SHORT).show();
 //                    testLocalization(false);
                 } else if (i == 1) {
-                    Toast.makeText(LocalizationTest.this, "Arebic Selected", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "Arebic Selected", Toast.LENGTH_SHORT).show();
 //                    testLocalization(true);
                 }
             }
