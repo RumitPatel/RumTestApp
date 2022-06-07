@@ -91,7 +91,7 @@
         <activity android:name=".broadcastAndDialog.ChildActivity_1" />
         <activity android:name=".broadcastAndDialog.ParentActivity" />
         <activity android:name=".broadcastAndDialog.ChildActivity_2" />
-        <activity android:name=".timeZoneTest.TimeZoneTestActvity" />
+        <activity android:name=".timeZoneTest.TimeZoneTestActivity" />
         <activity android:name=".locationAndPermissionTestActivity.LocationAndPermissionTestActivity" />
         <activity android:name=".locationAndPermissionTestActivity.LocationTest2" />
         <activity android:name=".reCaptchaTest.ReCaptchaTestActivity" />

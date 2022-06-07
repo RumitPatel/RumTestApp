@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class TimeZoneTestActvity extends AppCompatActivity {
+public class TimeZoneTestActivity extends AppCompatActivity {
 
     //Asia/Kolkata
     //Europe/London

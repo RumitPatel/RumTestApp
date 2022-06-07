@@ -45,7 +45,7 @@ import com.etl.rum.rumtestapp.tabActivities.IconTextTabsActivity;
 import com.etl.rum.rumtestapp.tabActivities.TabScrollable;
 import com.etl.rum.rumtestapp.tabActivities.TabSimple;
 import com.etl.rum.rumtestapp.temp.TempData;
-import com.etl.rum.rumtestapp.timeZoneTest.TimeZoneTestActvity;
+import com.etl.rum.rumtestapp.timeZoneTest.TimeZoneTestActivity;
 import com.etl.rum.rumtestapp.webViewWIthPostDataTest.WebViewWithPostActivity;
 import com.etl.rum.rumtestapp.workManager.WorkManagerActivity;
 
@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(new Intent(mContext, BroadCastFromMultipleActivitiesTest.class));
                     break;
                 case 9:
-                    startActivity(new Intent(mContext, TimeZoneTestActvity.class));
+                    startActivity(new Intent(mContext, TimeZoneTestActivity.class));
                     break;
                 case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
