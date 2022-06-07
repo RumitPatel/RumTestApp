@@ -21,10 +21,10 @@ public class TimeZoneTestActvity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actvity_timezone_test);
 
-        setLisetners();
+        setListeners();
     }
 
-    private void setLisetners() {
+    private void setListeners() {
         findViewById(R.id.btnClickHere).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
