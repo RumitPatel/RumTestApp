@@ -1,5 +1,6 @@
 package com.etl.rum.rumtestapp;
 
+import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
@@ -14,10 +15,15 @@ import java.util.List;
 import java.util.Locale;
 
 public class GeoCodeActivity extends AppCompatActivity {
+
+    private Context mContext;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo_code);
+
+        mContext = this;
 
         setListeners();
     }
@@ -36,7 +42,7 @@ public class GeoCodeActivity extends AppCompatActivity {
         double tempLong = 71.1924;
 
         try {
-            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+            Geocoder geocoder = new Geocoder(mContext, Locale.getDefault());
             List<Address> addresses = geocoder.getFromLocation(tempLat, tempLong, 5);
             for (int i = 0; i < addresses.size(); i++) {
                 AppUtils.printLogE(addresses.get(i).getPostalCode());
