@@ -2,6 +2,7 @@ package com.etl.rum.rumtestapp.rotateWithScrollTest;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,11 +18,6 @@ import java.util.List;
 
 public class RotateWithScrollTestActivity extends AppCompatActivity {
 
-    private Context mContext;
-    private RecyclerView recyclerView;
-    private ImageView imageViewTemp;
-    private RotateTestAdapter mRotateTestAdapter;
-
     private final ArrayList<ImageView> mArrayListImageView = new ArrayList<>();
     private final OnMyScrollListener mOnMyScrollListener = new OnMyScrollListener() {
 
@@ -30,6 +26,10 @@ public class RotateWithScrollTestActivity extends AppCompatActivity {
             mArrayListImageView.add(imageView);
         }
     };
+    private Context mContext;
+    private RecyclerView recyclerView;
+    private ImageView imageViewTemp;
+    private RotateTestAdapter mRotateTestAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,12 +62,12 @@ public class RotateWithScrollTestActivity extends AppCompatActivity {
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
             }
 
             @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
 
                 Log.e("@***@***@", "dx = " + dx + ", dy = " + dy);
