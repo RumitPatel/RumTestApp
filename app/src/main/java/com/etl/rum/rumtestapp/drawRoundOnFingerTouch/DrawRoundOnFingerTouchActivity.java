@@ -11,7 +11,6 @@ import com.etl.rum.rumtestapp.R;
 public class DrawRoundOnFingerTouchActivity extends AppCompatActivity {
 
     private Context mContext;
-
     private SimpleDrawingView mSimpleDrawingView;
 
     @Override
