@@ -6,11 +6,6 @@ import android.view.Window;
 
 import com.etl.rum.rumtestapp.R;
 
-/**
- * Created by FatehAli Asamadi on 24-Feb-18.
- * DialogFloatingActivity2
- */
-
 public class DialogFloatingActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
