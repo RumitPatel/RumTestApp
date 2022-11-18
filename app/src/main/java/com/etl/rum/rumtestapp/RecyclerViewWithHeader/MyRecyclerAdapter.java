@@ -42,7 +42,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             VHHeader VHheader = (VHHeader) holder;
             VHheader.txtTitle.setText(currentItem.getHeader());
         } else if (holder instanceof VHItem) {
-            ContentItem currentItem = (ContentItem) mHeaderItems.get(holder.getAdapterPosition());
+            ListItem currentItem = mHeaderItems.get(holder.getAdapterPosition());
             VHItem VHitem = (VHItem) holder;
             VHitem.txtName.setText(currentItem.getName());
         }
