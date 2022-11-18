@@ -29,13 +29,13 @@ public class RecyclerViewWithHeaderActivity extends AppCompatActivity {
 
     private ArrayList<ListItem> getList() {
         ArrayList<ListItem> arrayList = new ArrayList<>();
-        for (int j = 0; j <= 4; j++) {
+        for (int j = 0; j <= 40; j++) {
             Header header = new Header();
             header.setHeader("header" + j);
             arrayList.add(header);
             for (int i = 0; i <= 3; i++) {
-                ContentItem item = new ContentItem();
-                item.setRollnumber(i + "");
+                ListItem item = new ListItem();
+                item.setId(i);
                 item.setName("A" + i);
                 arrayList.add(item);
             }
