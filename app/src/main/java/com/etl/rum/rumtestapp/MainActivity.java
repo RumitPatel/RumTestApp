@@ -225,9 +225,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 10:
                     startActivity(new Intent(mContext, LocationAndPermissionTestActivity.class));
                     break;
-                case 11:
-                    startActivity(new Intent(mContext, GeoCodeActivity.class));
-                    break;
                 case 12:
                     startActivity(new Intent(mContext, TestPlaceAPIActivity.class));
                     break;

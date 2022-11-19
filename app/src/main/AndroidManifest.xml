@@ -95,7 +95,6 @@
         <activity android:name=".locationAndPermissionTestActivity.LocationAndPermissionTestActivity" />
         <activity android:name=".locationAndPermissionTestActivity.LocationTest2" />
         <activity android:name=".reCaptchaTest.ReCaptchaTestActivity" />
-        <activity android:name=".GeoCodeActivity" />
         <activity android:name=".PlaceApi.TestPlaceAPIActivity" />
         <activity android:name=".mockLocation.MockLocationCheckActivity" />
         <activity android:name=".rotateWithScrollTest.RotateWithScrollTestActivity" />
