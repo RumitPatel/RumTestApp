@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.etl.rum.rumtestapp">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -19,7 +23,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesignDemo">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,13 +55,8 @@
         <activity android:name=".tabActivities.TabSimple" />
         <activity android:name=".tabActivities.TabScrollable" />
         <activity android:name=".tabActivities.IconTextTabsActivity" />
-        <activity android:name=".calenderViewTest.CalenderViewTest" />
-        <activity android:name=".directPay.DirecPayTestActivity" />
-        <activity android:name=".callbackWebViewTest.WebViewCallBackTestActivity" />
-        <activity android:name=".dateTimeConversation.DateTimeConverzationTestActivity" />
         <activity android:name=".fireStoreTest.FireStoreTestActivity" />
         <activity android:name=".webViewWIthPostDataTest.WebViewWithPostActivity" />
-        <activity android:name=".FaceBookAuthFirebaseTest.FacebookAuthFirebaseActivity" />
 
         <!-- start facebook -->
         <meta-data
@@ -78,7 +79,6 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".stripeTest.StripeTestActivity" />
         <activity android:name=".notificatoinHeadsUp.NotificationHeadsUpActivity" />
         <!-- end facebook -->
         <activity android:name=".LocalizationTest.LocalizationTest" />
@@ -94,7 +94,6 @@
         <activity android:name=".timeZoneTest.TimeZoneTestActivity" />
         <activity android:name=".locationAndPermissionTestActivity.LocationAndPermissionTestActivity" />
         <activity android:name=".locationAndPermissionTestActivity.LocationTest2" />
-        <activity android:name=".reCaptchaTest.ReCaptchaTestActivity" />
         <activity android:name=".PlaceApi.TestPlaceAPIActivity" />
         <activity android:name=".mockLocation.MockLocationCheckActivity" />
         <activity android:name=".rotateWithScrollTest.RotateWithScrollTestActivity" />
@@ -109,7 +108,6 @@
         <activity android:name=".downloadWithProgress.DownloadWithNotificationProgress" />
         <activity android:name=".qrCodeRead.QRCodeReadActivity" />
         <activity android:name=".signInWithGoogle.SignInWithGoogleActivity" />
-        <activity android:name=".ePrescriptionTest.EPrescriptionTestActivity" />
         <activity android:name=".drawRoundOnFingerTouch.DrawRoundOnFingerTouchActivity" />
     </application>
 </manifest>
